@@ -15,6 +15,7 @@
     --cream: #fdf6e8;
     --gold: #c9a84c;
     --dark: #0d2535;
+    --sage-green: #9CAF88;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -216,13 +217,13 @@
     font-family: 'Playfair Display', serif;
     font-size: clamp(2.5rem, 10vw, 8rem);
     line-height: 0.9;
-    color: var(--deep-ocean);
+    color: var(--sage-green);
     animation: fadeDown 1s ease 0.2s both;
   }
   .hero-names span {
     display: block;
     font-style: italic;
-    color: var(--coral);
+    color: var(--sage-green);
   }
   .ampersand {
     font-size: 0.6em;
@@ -679,20 +680,16 @@
   @media (max-width: 768px) {
     /* Navigation */
     nav {
-      padding: 1rem 1rem;
-      flex-wrap: wrap;
-      gap: 1rem;
+      padding: 1rem;
+      justify-content: center;
     }
     nav .logo {
       font-size: 1rem;
-      flex: 0 0 100%;
+      flex: none;
       text-align: center;
     }
     nav ul {
-      gap: 0.8rem;
-      flex: 0 0 100%;
-      justify-content: center;
-      flex-wrap: wrap;
+      display: none;
     }
     nav ul a {
       font-size: 0.65rem;
@@ -999,7 +996,7 @@
     <li><a href="#timeline">Journey</a></li>
     <li><a href="#beach">Beach Love</a></li>
     <li><a href="#countdown">Countdown</a></li>
-    <li><a href="#rsvp">RSVP</a></li>
+    <li><a href="#rsvp">Location</a></li>
   </ul>
 </nav>
 
@@ -1215,16 +1212,14 @@
 <!-- RSVP -->
 <section id="rsvp">
   <div class="section-inner">
-    <span class="section-label">Join Us</span>
-    <h2 class="section-title">Send Us Your <em>Love & RSVP</em></h2>
+    <span class="section-label">Our Celebration</span>
+    <h2 class="section-title">Location Details <em>Coming Soon</em></h2>
 
-    <p style="font-size: clamp(1rem, 2vw, 1.2rem); font-style: italic; color: rgba(255,255,255,0.7); max-width: 500px; margin: 0 auto clamp(1rem, 2vw, 2rem); text-align: center; line-height: 1.8;">We would be honored to celebrate this milestone with you. Please let us know you're coming!</p>
+    <p style="font-size: clamp(1rem, 2vw, 1.2rem); font-style: italic; color: rgba(255,255,255,0.7); max-width: 500px; margin: 0 auto clamp(1rem, 2vw, 2rem); text-align: center; line-height: 1.8;">We're finalizing the perfect location to celebrate our love story. Details will be shared very soon!</p>
 
-    <div class="rsvp-form">
-      <input type="text" placeholder="Your Name">
-      <input type="email" placeholder="Your Email">
-      <input type="number" placeholder="Number of Guests" min="1" max="5">
-      <button class="btn">RSVP with Love 🌊</button>
+    <div style="margin: clamp(2rem, 4vw, 3rem) auto; padding: clamp(2rem, 3vw, 3rem); max-width: 400px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: 2px; text-align: center;">
+      <p style="font-family: 'Playfair Display', serif; font-size: clamp(1.5rem, 3vw, 2rem); color: rgba(255,255,255,0.9); margin-bottom: 0.5rem;">📍</p>
+      <p style="font-family: 'Josefin Sans', sans-serif; font-size: clamp(0.8rem, 1.5vw, 0.95rem); letter-spacing: 0.1em; color: rgba(255,255,255,0.7);">Venue location, accommodation, and other details will be shared with you shortly.</p>
     </div>
 
     <div class="footer-names">Nitheesh & Aradhana</div>
